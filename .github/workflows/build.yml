@@ -147,7 +147,7 @@ jobs:
           echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> $cpath # frpc
           echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> $cpath # frps
           echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> $cpath # Tunsafe VPN
-          
+          cp $cpath /opt/rt-n56u/trunk/.config
         env:
           cpath: /opt/rt-n56u/trunk/configs/templates/ 
       - name: 编译
