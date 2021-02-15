@@ -119,14 +119,14 @@ jobs:
           echo "CONFIG_FIRMWARE_INCLUDE_ARIA=n" >> $cpath # Aria2 下载软件
           echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> $cpath # Aria2 web管理界面
           
-          echo "CONFIG_FIRMWARE_INCLUDE_CURL=n" >> $cpath # Curl命令
+          echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> $cpath # Curl命令
           echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> $cpath # scut 校园网
           echo "CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM=n" >> $cpath # drcom 校园网
           echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> $cpath # dogcom 校园网
           echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> $cpath # 锐捷认证
           echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> $cpath # njit client 校园网
-          echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=n" >> $cpath # IPv6 NAT
-          echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> $cpath # Shadowsocks
+          echo "CONFIG_FIRMWARE_INCLUDE_NAPT66=y" >> $cpath # IPv6 NAT
+          echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> $cpath # Shadowsocks
           echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> $cpath # SS Server
           echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_SERVER=n" >> $cpath # SoftEther VPN Server
           echo "CONFIG_FIRMWARE_INCLUDE_SOFTETHERVPN_CLIENT=n" >> $cpath # SoftEther VPN Client
@@ -135,7 +135,7 @@ jobs:
           echo "CONFIG_FIRMWARE_INCLUDE_VLMCSD=n" >> $cpath # KMS 激活服务器
           echo "CONFIG_FIRMWARE_INCLUDE_TTYD=n" >> $cpath # web 终端
           echo "CONFIG_FIRMWARE_INCLUDE_LRZSZ=n" >> $cpath # sz 命令 终端文件传输
-          echo "CONFIG_FIRMWARE_INCLUDE_HTOP=n" >> $cpath # htop 命令 进程管理
+          echo "CONFIG_FIRMWARE_INCLUDE_HTOP=y" >> $cpath # htop 命令 进程管理
           echo "CONFIG_FIRMWARE_INCLUDE_NANO=n" >> $cpath # nano 命令 文本编辑
           echo "CONFIG_FIRMWARE_INCLUDE_IPERF3=n" >> $cpath # Iperf3 网速测试
           echo "CONFIG_FIRMWARE_INCLUDE_DUMP1090=n" >> $cpath # dump1090
