@@ -23,11 +23,10 @@ jobs:
       - name: 安装依赖
         run: |
           sudo apt update
-          sudo apt upgrade -y
           sudo apt install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd \
-          fakeroot kmod cpio git python-docutils gettext automake autopoint \
-          texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
-          libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin -y
+	        fakeroot kmod cpio git python3-docutils gettext automake autopoint \
+	        texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev \
+	        libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin -y
 
       - name: 下载源码
         run: git clone --depth=1 https://github.com/dream10201/rt-n56u.git /opt/rt-n56u
